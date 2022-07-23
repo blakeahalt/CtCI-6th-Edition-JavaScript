@@ -44,12 +44,11 @@ function everyCharUnique (str) {
 	for (i = 0; i < str.length; i++) {
 	val = str.charAt(i);
 	if (char_set[val]) {
-			console.log(char_set)
-			return false;
+		return false;
 		}
-		console.log(char_set)
-		console.log(char_set.length)
-		char_set[val] = true;
+		console.log(char_set) 				// [128]
+		console.log(char_set.length)		// 1
+		char_set[val] = true;				// true/false
 	}
 	return true;
 }
@@ -57,5 +56,5 @@ function everyCharUnique (str) {
 /* TESTS */
 console.log(everyCharUnique('abcd'), 'true');
 console.log(everyCharUnique('abccd'), 'false');
-console.log(everyCharUnique('bhjjb'), 'false');
-console.log(everyCharUnique('mdjq'), 'true');
+// console.log(everyCharUnique('bhjjb'), 'false');
+// console.log(everyCharUnique('mdjq'), 'true');
